@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "abbadonrpg",
+	"version": "${version}",
+	"name": "Abbadon RPG",
+	"description": "This is a mod that adds different modifications to Minecraft with the objective to make it more like an ActionRPG.",
+	"authors": [
+		"DollSeuMiguinho"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/DollSeuMiguinho/Fabic-Abbadon-RPG-1.21.x"
+	},
+	"license": "MIT",
+	"icon": "assets/abbadonrpg/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.dollseumiguinho.abbadonrpg.AbbadonRPG"
+		],
+		"fabric-datagen": [
+			"net.dollseumiguinho.abbadonrpg.AbbadonRPGDataGenerator"
+		],
+		"client": [
+			"net.dollseumiguinho.abbadonrpg.AbbadonRPGClient"
+		]
+	},
+	"mixins": [
+		"abbadonrpg.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
